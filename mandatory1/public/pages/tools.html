@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <title>Tools</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Tools</h1>
+        <p>
+            Throughout the course we have been introduced to some tools. Not all of them are essential, but they are all designed to assist developer productivity.
+            <br>
+            Below I will cover some of them. Note that ESLint was already covered in the "Clean Code" section.
+        </p>
+
+        <h3>Nodemon</h3>
+        <p>
+            Nodemon is a simple but very convenient tool during the development process of a Node project.
+            <br>
+            Nodemon can help the developer by automatically restarting their node application whenever changes in the directory occur.
+            <br>
+            Setting up and running nodemon is very straight forward. It is installed through the npm(Node Package Manager)
+            <pre><code>
+                npm install --save-dev nodemon // Use "npm install -g nodemon" for global installation.
+
+                nodemon "yourAppName.js" // to run nodemon, you simply substitute the default node command with nodemon.</code></pre>
+            
+            You can configure your nodemon installation in a nodemon.json file, or directly in your package.json file.
+            <br>
+            In our case since we primarily work with html, js and json files, we use the following configuration:
+            <pre><code>
+                "nodemonConfig": {
+                "ext": "js, json, html"
+                }
+                </code></pre>
+            This will make our nodemon installation monitor js, json and html files for changes and restart our project automatically when any of these file types are modified.
+            <br>
+            Nodemon also simplifies that process of manually restarting as well. Simply write: <code>rs</code> in your terminal running nodemon, and your project will restart.    
+        </p>
+
+        <h3>Git</h3>
+        <p>
+            Git is a version control system. If a git project is initialized in a folder, it will track changes to files in that project.
+            <br>
+            This is a great developer tool since we are constantly creating, updating or deleting files from our projects.
+            <br>
+            This means there are a lot of opportunities for us to mess up and go wrong. In cases like this, it is possible to revert back to previously committed versions the project.
+            <br>
+            Git is also a powerful tool for developers to collaborate on projects, since Git allows the developers to create multiple independent branches of the same project,
+            <br>
+            which can later on be merged.
+            <br>
+            Git is often times used in combination with hosting platforms such as Github, since git has the built-in capability to push to remote repositories.
+            <br>
+            There is a bunch of fancy git commands, but I'll cover the most basic and essential ones below:
+            <pre><code>
+                git init // Initializes a git project in your current directory
+
+                git add -A // Adds all files and changes to the staging area
+
+                git commit -m "Message here" // Creates a new commit with a message
+
+                git push // Pushes the project to a remote repository
+            </code></pre>
+        </p>
+    </div>
+
+</body>
+
+</html>

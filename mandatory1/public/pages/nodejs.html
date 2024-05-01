@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <title>Node.js</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Node.js</h1>
+
+        <p>
+            Node.js is a JavaScript runtime environment which can execute JavaScript code outside of the web browser.
+            <br>
+            This broadens the scope for what is feasible to do with JavaScript. Server-side development being a particularly noteworthy example.
+            <br>
+            <br>
+            The npm(Node Package Manager) is the designated package manager for Node.js.
+            <br>
+            It enables the developer to easily install, manage and update dependencies for their Node.js projects.
+        </p>
+
+        <h3>Express.js</h3>
+        <p>
+            Express.js is a lightweight web application framework.
+            <br>
+            As a lightweight framework, it provides a solid set of baseline features,
+            <br>
+            while simultaniously giving the developer the flexibility to structure their project as they see fit.
+            <br>
+            Express.js can be used to build web and mobile applications.
+            <br>
+            In our case we also use it for server development, as it drastically simplifies the process.
+            <br>
+        </p>
+
+        <h3>Commands and Code</h3>
+        <p>
+            Initializing a Node.js project is incredibly easy. You initialize a Node.js project with this simple terminal command:
+            <pre><code>
+                npm init //Include -y at the end for default settings
+            </code></pre>
+            <br>
+            Installing Express.js is just as simple:
+            <pre><code>
+                npm install express
+            </code></pre>
+            <br>
+            Once your project is initialized, you can initialize an app with the following lines of code in your project:
+            <pre><code>
+                import express from "express"; //Imports the express module
+                const app = express(); //Creates an instance of an Express application
+                
+                app.listen(port); //Server launch
+            </code></pre>
+            <br>
+            There is of course much more you can do with Node.js and Express.js, but this is all it takes to get started with both.
+
+        </p>
+    
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <title>Rendering</title>
+</head>
+
+<body>
+    <div class="content">
+    <h1>Rendering</h1>
+
+    <p>
+        We have been introduced to two types of rendering: Server-side rendering(SSR), and Client-side rendering(CSR).
+        <br>
+        Below I will describe their respective pros and cons and ideal use cases.
+    </p>
+
+    <h3>Client-side Rendering</h3>
+    <p>
+        With client-side rendering, the users browser downloads the required files to build the web page in the users browser.
+        <br>
+        This is useful for dynamic and interactive websites, where you want the user to be able to manipulate the content of the page without full page reloads or a bunch of requests to the server.
+        <br>
+        Client-side rendering also means that the server will be under less strain than with SSRs for example.
+        <br>
+        <br>
+        Everything comes at a cost though! Lower server load means the performance demands are higher for the users device.
+        <br>
+        Another downside would be the slower initial load time, because the page doesn't come pre-loaded.
+        <br>
+        CSR also leads to worse search engine optimization, because search engines have a harder timer indexing CSR pages.
+
+    </p>
+
+    <h3>Server-side Rendering</h3>
+    <p>
+        As you may have already guessed, Server-side rendering is in a lot of ways the contrasting approach CSR when it comes to rendering.
+        <br>
+        With SSR, the server renders the HTML content and sends a fully rendered page to the client on initial load. This leads to faster initial load times.
+        <br>
+        Since the content is available up front, it's also easier for search engines to index the content of SSR pages, which in turns leads to better SEO performance.
+        <br>
+        Since the server is doing the rendering for the user, SSR also results in higher server load compared to it's counterparts.
+        <br>
+        It can also be slightly more complex to implement server-side rendering, as it requires some additional server side logic to implement.
+
+        
+
+        
+
+    </p>
+    </div>
+</body>
+
+</html>

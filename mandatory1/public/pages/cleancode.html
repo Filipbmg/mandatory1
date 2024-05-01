@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <title>Clean Code</title>
+</head>
+
+<body>
+    <div class="content">
+
+    
+    <h1>Clean Code</h1>
+
+    <p>
+        Clean code essentially boils down to code which is readable, maintainable and well structured.
+        <br>
+        As projects, tasks and teams grows progressively larger and more complex, the importance of clean code also grows.
+        <br>
+        Producing readable and well structured code, makes it's easier to jump in and pick up where someone else left off. That someone could even be your past self!
+        <br>
+        <br>
+        There are various tools and practices which can help developers produce cleaner code.
+        <br>
+        One would for example be uniform and standardized naming conventions and file placements.
+        <br>
+        Beyond that, the following tools are also of great help:
+    </p>
+
+    <h3>Linters</h3>
+    <p>
+        Linters are tools used to analyze code for potential errors, stylistic inconsistencies and various other forms of smelly code.
+        <br>
+        All of the most commonly used programming languages have their own specific linters.
+        <br>
+        The JavaScript linter we have decided to focus on is called ESLint.
+        <br>
+        Assuming you already have NodeJS installed in your project, all you have to do to install and configure ESLint is to run the following terminal command:
+        <pre><code>
+            npm init @eslint/config
+        </code></pre>
+        After configuring your ESLint installation, you can run ESLint on your file(s) with the following command:
+        <pre><code>
+            npx eslint yourFileName.js
+        </code></pre> 
+    </p>
+
+    <h3>Debugging</h3>
+    <p>
+        In many cases the stacktrace in your IDE will point you in the correct direction of where your code is malfunctioning.
+        <br>
+        In cases where your code runs, but you aren't getting the desired outcomes, you can also strategically use console.log() at various points in your code.
+        <br>
+        This can help you gain insight into what is going on within your code, and hopefully track your way back to the error(s).
+    </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <title>JavaScript Fundamentals</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1>JavaScript Fundamentals</h1>
+
+      <p>
+          Below I'll cover some of the fundamentals of JavaScript which we covered in class.
+      </p>
+
+    <h3>Declaring Variables</h3>
+      <p>
+          In JavaScript there are three ways of declaring variables: <code>var</code>, <code>let</code> and <code>const</code>.
+          <br>
+          Although it is still possible to use it, it is no longer recommended to use <code>var</code> for anything JavaScript related.
+          <br>
+          The reason why <code>var</code> is outdated at this point, is because unlike <code>let</code> and <code>const</code>, <code>var</code> does not have block scope.
+          <br>
+          This means <code>var</code> variables are not limited to the block they're defined in, which can quickly result in messy code and undesirables outcomes if you're not careful.
+          <br>
+          <br>
+          The difference between <code>let</code> and <code>const</code> variables is that <code>let</code> variables can be reassigned, while <code>const</code> variables cannot.
+          <br>
+          A good rule of thumb to avoid any confusion, is to use <code>const</code> whenever possible, and <code>let</code> for any other scenario.
+      </p>
+
+    <h3>Data Types</h3>
+      <p>
+          Below is a list of the data types you're most likely to encounter in JavaScript. 
+          <table>
+              <thead>
+                <tr>
+                  <th>Data Type</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Number</td>
+                  <td>Numeric data. Represents both integers and floats</td>
+                  <td><code>
+                      const int = 10
+                      const float = 10.5
+                  </code></td>
+                </tr>  
+                <tr>
+                  <td>Boolean</td>
+                  <td>A logical True or False value</td>
+                  <td><code>const isDone = false</code></td>
+                </tr>
+                <tr>
+                  <td>String</td>
+                  <td>Text data. Enclosed with either double quotes or single quotes</td>
+                  <td><code>
+                      const doubleQuote = "This works"
+                      <br>
+                      const singleQuote = 'This works too'
+                  </code></td>
+                </tr>
+                <tr>
+                  <td>Undefined</td>
+                  <td>The default value of a variable which has been declared but not assigned a value</td>
+                  <td><code>const undefinedVariable</code></td>
+                </tr>
+                <tr>
+                  <td>Null</td>
+                  <td>Explicitly indicates that a variable has no value</td>
+                  <td><code>const nothingHere = null</code></td>
+                </tr>
+                <tr>
+                  <td>Object</td>
+                  <td>A collection of key-value pairs of any data type. Including other objects.</td>
+                  <td><code>const object = {
+                      key1: value1,
+                      key2: value2
+                      }</code></td>
+                </tr>
+                <tr>
+                  <td>Array</td>
+                  <td>A collection of elements of any data type. Including objects or other arrays</td>
+                  <td><code>const array = [a, b, c, d]</code></td>
+                </tr>
+                <tr>
+                  <td>Function</td>
+                  <td>A callable object, which can be called upon with or without parameters</td>
+                  <td><code>const function(parameter) {
+                      return blah
+                      }</code></td>
+                </tr>
+              </tbody>
+            </table>
+
+      </p>
+  </div>
+</body>
+
+</html>

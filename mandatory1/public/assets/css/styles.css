@@ -1,0 +1,89 @@
+/* Sidebar */
+.sidebar {
+    width: 120px;
+    background-color: #333;
+    padding: 20px;
+    float: left;
+    margin-left: -20px;
+    margin-top: -25px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Page */
+.content {
+  margin-left: 180px;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+code {
+  font-family: Consolas, monospace;
+  background-color: #f2f2f2;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 115%;
+    background-color: #585858;
+    z-index: 9999;
+    margin-left: -15px;
+    text-align: center;
+    color: white;
+
+}
